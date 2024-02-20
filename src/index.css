@@ -267,6 +267,16 @@ h1 {
   margin: 0;
 }
 
+.center {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  background-image: linear-gradient(45deg,#ffc404,rgba(255, 153, 0, 0));
+  color: transparent;
+  background-clip: text;
+  animation:fade-in-and-out infinite ease 1.5s;
+}
+
 @keyframes fade-slide-up {
   from {
     opacity: 0;
@@ -276,5 +286,19 @@ h1 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-and-out {
+  0% {
+    opacity:0.5;
+  }
+
+  50% {
+    opacity: 1;    
+  }
+
+  100%{
+    opacity: 0.5;
   }
 }
